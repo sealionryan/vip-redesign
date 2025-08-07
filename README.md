@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Vegas Improv Power (VIP) — Redesign MVP
 
-## Getting Started
+This repository contains a Next.js 15 app (TypeScript, App Router, Tailwind CSS v4) with shadcn/ui initialized. We are currently in the planning phase to build a vibrant, professional homepage that embodies VIP’s "Functional Improv®" approach and the tagline "Improv for Being a Human®".
 
-First, run the development server:
+### Status
+- Planning only. No implementation has begun yet.
+- Private design docs placed in `.docs/` (ignored by git) for local reference.
 
+### Key Paths
+- Public assets: `public/`
+  - Logos: `public/logos/2025-web-logo-header-main-transparent.png` (for light bgs), `public/logos/2022-web-logo-header-white.png` (for dark bgs)
+- Private docs (not committed): `.docs/`
+  - `/.docs/DESIGN-GUIDE.md`
+  - `/.docs/HOMEPAGE-OUTLINE.md`
+
+### Getting Started
+Run the development server:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+Then open http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Scripts
+- `dev`: Run Next.js dev server
+- `build`: Build the app
+- `start`: Start the production server
+- `lint`: Run ESLint
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Tech
+- Next.js 15 (App Router, TypeScript)
+- Tailwind CSS v4
+- shadcn/ui (latest CLI)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Docs
+- PRD: `PRD.md`
+- Tasks: `TASKS.md`
+- Private design references live in `/.docs/` and are intentionally ignored by git.
 
-## Learn More
+### Deployment (Preparation)
+This repo is configured to be pushed to GitHub. Public assets live under `public/`. Private working docs live under `/.docs/` and are already listed in `.gitignore`.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+We will integrate CI and deployment in a later phase.
