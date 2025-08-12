@@ -4,15 +4,16 @@
 
 ## 1. Project Prep (Done / Verify)
 - Confirm tech stack: Next.js 15, Tailwind v4, shadcn/ui
-- Ensure `.docs/` is ignored in `.gitignore` (private working docs)
+- Ensure `.docs/`, `.prd/`, `.serena/`, and `.old/` are ignored in `.gitignore`
 - Verify public assets: `public/logos/` light/dark logos
 - Ensure `README.md`, `PRD.md`, `TASKS.md` exist and are accurate
 
-## 2. Design Inputs (Private References)
-- Review `/.docs/DESIGN-GUIDE.md`
-- Review `/.docs/HOMEPAGE-OUTLINE.md`
-- Extract tokens: colors, spacing, radii, motion
-- Decide interim fonts vs final (licensing check)
+## 2. Design Inputs (Private References) ✓
+- Review (skip any in /.docs/ subfolder, they are old, only use if needed for prior research) `/.docs/DESIGN-GUIDE.md` (historic) and `/.prd/DESIGN-GUIDE.md` (Webflow build) ✓
+- Review `/.prd/HOMEPAGE-OUTLINE.md` ✓
+- Extract tokens: colors, spacing, radii, motion ✓
+- Fonts: Satoshi (variable font available in `public/fonts/`) + Karma (woff/woff2 available in `public/fonts/Karma-webfonts/`) ✓
+- AI wireframe prototype created and validated ✓
 
 ## 3. IA & Content (MVP)
 - Finalize section order and copy placeholders per PRD
@@ -21,13 +22,14 @@
 ## 4. Component Plan
 - Layout primitives: `Container`, `Section`, `SectionHeading`
 - Header/Nav with logo variants and sticky behavior
-- Hero block (headline, subcopy, dual CTAs, imagery placeholder)
-- Feature cards (Classes, Corporate Workshops)
-- Testimonials (MVP placeholder)
-- Differentiators list
-- Clients logo strip (placeholder)
-- Blog highlights (MVP placeholder)
-- Footer with dark theme and white logo variant
+- Hero block (H1 headline, subcopy, dual CTAs, imagery placeholder)
+- Differentiators list (H2, subcopy, 3 cards with 16:9 thumbnail placeholder, excerpt, link to read more)
+- Testimonials (H2, three cards, circular reviewer thumbnail, five yellow stars, review excerpt, circular review-site logo (Google, Yelp), and review date)
+- Feature cards (H2, Improv Classes, Corporate Workshops)
+- Clients logo strip (H2, placeholder logo strip)
+- Blog highlights (H2, Webflow CMS-bound, 16:9 thumbnail image placeholders, article title, excerpt, link to read more)
+- FAQs (Webflow CMS-bound or static shortlist per page)
+- Footer with dark purple theme and white logo variant
 
 ## 5. Visual System (MVP)
 - Color tokens in `globals.css` aligned with guide (Tailwind v4 inline tokens)
@@ -40,7 +42,7 @@
 - Implement responsive layout and sections per PRD
 - Wire dual CTAs and anchor/route targets
 - Integrate accessible navigation and focus states
-- Add placeholder content/images as specified
+- Add placeholder content/images as specified (rights-cleared or AI placeholders)
 
 ## 7. Accessibility & Performance (MVP)
 - Semantic structure and ARIA where needed
@@ -62,4 +64,5 @@
 - Analytics events for CTA clicks
 - Content system for testimonials/blog highlights
 - OKCLH shade generation and full theme tokens
+
 

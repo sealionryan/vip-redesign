@@ -22,7 +22,13 @@
 
 # misc
 .DS_Store
+**/.DS_Store
 *.pem
+Thumbs.db
+*.tmp
+*.swp
+*.swo
+*~
 
 # debug
 npm-debug.log*
@@ -40,3 +46,24 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .docs/
+
+# hidden project folders (do not commit)
+.prd/
+.serena/
+.old/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-*
+.atom/
+
+# OS generated files
+.DS_Store?
+ehthumbs.db
+Icon?
+
+# Temporary files
+.tmp/
+temp/
+*.cache
