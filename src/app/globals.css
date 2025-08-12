@@ -46,12 +46,35 @@
 :root {
   --radius: 0.875rem; /* 14px - per design guide 12-16px range */
   
-  /* VIP Brand Colors - from design guide */
-  --vip-purple-700: #4E4489;
-  --vip-purple-600: #6B5B95;
-  --vip-purple-500: #7C6DAF;
-  --vip-purple-400: #8B7BB8;
-  --vip-orange: #FFA77A;
+  /* VIP Brand Colors - OKLCH values */
+  --vip-purple-50: oklch(96.60% 0.01 281.08);
+  --vip-purple-75: oklch(94.91% 0.02 281.09);
+  --vip-purple-100: oklch(93.21% 0.03 281.09);
+  --vip-purple-200: oklch(87.84% 0.04 282.62);
+  --vip-purple-300: oklch(79.66% 0.08 282.86);
+  --vip-purple-400: oklch(70.52% 0.11 284.34);
+  --vip-purple-500: oklch(63.64% 0.13 285.94);
+  --vip-purple-600: oklch(56.33% 0.15 286.58);
+  --vip-purple-700: oklch(46.57% 0.14 286.40); /* brand purple */
+  --vip-purple-800: oklch(39.65% 0.12 283.93);
+  --vip-purple-900: oklch(35.10% 0.09 285.08);
+  --vip-purple-925: oklch(31.25% 0.075 285.34);
+  --vip-purple-950: oklch(27.39% 0.06 285.59);
+  
+  --vip-orange-50: oklch(98.04% 0.01 63.93);
+  --vip-orange-75: oklch(96.52% 0.02 60.93);
+  --vip-orange-100: oklch(94.99% 0.03 57.92);
+  --vip-orange-200: oklch(88.41% 0.07 54.19);
+  --vip-orange-300: oklch(80.67% 0.12 50.67);
+  --vip-orange-400: oklch(74.84% 0.16 45.46); /* brand orange */
+  --vip-orange-500: oklch(68.33% 0.19 41.72);
+  --vip-orange-600: oklch(64.22% 0.20 37.72);
+  --vip-orange-700: oklch(56.03% 0.18 37.51);
+  --vip-orange-800: oklch(49.27% 0.14 38.40);
+  --vip-orange-900: oklch(43.39% 0.11 41.65);
+  --vip-orange-925: oklch(37.30% 0.095 41.73);
+  --vip-orange-950: oklch(31.20% 0.08 41.81);
+  
   --vip-white: #F2F2F2;
   --vip-black: #1F1F1F;
   --card: oklch(1 0 0);
@@ -143,7 +166,7 @@
   }
   
   .gradient-orange {
-    background: linear-gradient(135deg, var(--vip-orange), #FF8C5A);
+    background: linear-gradient(135deg, var(--vip-orange-400), var(--vip-orange-500));
   }
   
   .art-deco-section {

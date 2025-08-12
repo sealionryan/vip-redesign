@@ -61,9 +61,9 @@
 
 ## Style Tokens (MVP)
 - Colors
-  - Purple `#4e4489`, Orange `#FFA77A`, White `#f2f2f2`, Black `#1f1f1f`
+  - Purple: `--vip-purple-700` (brand), Orange: `--vip-orange-400` (brand), White `#f2f2f2`, Black `#1f1f1f`
   - Tailwind v4 inline tokens in `src/app/globals.css`
-  - OKCLH shade scale: Phase 2
+  - OKLCH shade scale: Implemented (50-950 for Purple/Orange)
 - Typography
   - Headlines: Satoshi (variable) — bold/medium weights per section
   - Body: system fallbacks (Phase 2: Karma)
@@ -82,15 +82,6 @@
 - Contrast: ≥ 4.5:1 text; visible focus
 - Alt text for informative images; decorative images hidden from a11y tree
 
-## SEO (MVP)
-- Title, meta description
-- Basic Open Graph/Twitter tags
-- Descriptive alt text; clean headings hierarchy
-
-## Performance Targets
-- Lighthouse: Perf > 85, A11y > 95, Best Practices > 95, SEO > 90
-- LCP < 2.5s, CLS < 0.1; lazy‑load non‑critical media
-
 ## Acceptance Checklist (Binary)
 - [ ] Header/nav with logo swap and primary CTA
 - [ ] Hero renders with headline (≤ 10 words), subcopy (≤ 20 words), 2 CTAs
@@ -99,8 +90,6 @@
 - [ ] Past clients (6 logos) and Blog highlights (3 posts)
 - [ ] Final CTA section and dark footer with white logo
 - [ ] Keyboard nav passes; visible focus; contrast meets targets
-- [ ] Title/meta present; OG/Twitter placeholders
-- [ ] LCP/CLS within targets on local test imagery
 
 ## Phase 2 (Post‑MVP) — Outline
 - OKCLH shade system and design tokens expansion

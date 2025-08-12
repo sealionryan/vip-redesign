@@ -10,23 +10,23 @@ Every element should feel **intentional, uncluttered, and inviting**, with space
 ## Color System
 
 ### Brand Colors
-- **Purple**: `#4e4489` (base)
-- **Orange/Peach**: `#FFA77A` (base)
+- **Purple**: `--vip-purple-700` (brand base)
+- **Orange/Peach**: `--vip-orange-400` (brand base)
 - **White**: `#f2f2f2`
 - **Black**: `#1f1f1f`
 
-### Color Shades (Use OKLCH for even distribution)
-Generate shades for purple and orange using these stops:
+### Color Shades (OKLCH implemented)
+OKLCH shade scale now implemented for purple and orange:
 - **50, 75, 100, 200, 300, 400, 500, 600, 700, 800, 900, 925, 950**
   - 50–100: Very light backgrounds
   - 200–400: Light UI elements
-  - 500: Base color
+  - 700: Brand purple, 400: Brand orange
   - 600–800: Darker variations
   - 900–950: Text and dark backgrounds
 
 ### Application Patterns
 - **Primary sections**: White or Purple-50/75 backgrounds with high-contrast text
-- **CTAs/Buttons**: Orange-700 background with white text for high visibility
+- **CTAs/Buttons**: Orange-400 (brand) background with white text for high visibility
 - **Footer**: Purple-900/950 background with white text
 - **Cards**: White (#f2f2f2) with soft shadows and/or subtle gradients
 
